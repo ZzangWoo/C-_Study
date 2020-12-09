@@ -14,6 +14,12 @@ namespace LINQ_Example
         public List<int> Scores;
     }
 
+    public class StudentGrade
+    {
+        public int ID { get; set; }
+        public int Grade { get; set; }
+    }
+
     public class Program
     {
         private static List<Student> students = new List<Student>
@@ -32,11 +38,73 @@ namespace LINQ_Example
             new Student {First="Michael", Last="Tucker", ID=122, Scores= new List<int> {94, 92, 91, 91}}
         };
 
+        private static List<StudentGrade> studentGrades = new List<StudentGrade>
+        {
+            new StudentGrade {ID=111, Grade=1},
+            new StudentGrade {ID=112, Grade=2},
+            new StudentGrade {ID=114, Grade=3},
+            new StudentGrade {ID=119, Grade=2},
+            new StudentGrade {ID=122, Grade=3},
+            new StudentGrade {ID=140, Grade=5}
+        };
+
         static void Main(string[] args)
         {
-            Example2();
+            Example6();
         }
 
+        static void Example6()
+        {
+            var results = from student in students
+                          join grade in studentGrades on student.ID equals grade.ID into a
+                          from grade in a.DefaultIfEmpty(new StudentGrade() { ID = 0 })
+                          select new
+                          {
+                              student.ID,
+                              student.First,
+                              grade.Grade
+                          };
+
+            foreach (var result in results)
+            {
+                Console.WriteLine($"ID : {result.ID} | Name : {result.First} | Grade : {result.Grade}");
+            }
+        }
+
+        static void Example5()
+        {
+            var results = from student in students
+                          join grade in studentGrades on student.ID equals grade.ID
+                          select new
+                          {
+                              student.ID,
+                              student.First,
+                              grade.Grade
+                          };
+
+            foreach (var result in results)
+            {
+                Console.WriteLine($"ID : {result.ID} | Name : {result.First} | Grade : {result.Grade}");
+            }
+        }
+
+        static void Example4()
+        {
+            var results = from student in students
+                          group student by student.Scores.Average() >= 85 into g
+                          select new { GroupKey = g.Key, Profiles = g };
+
+            foreach (var group in results)
+            {
+                Console.WriteLine($"평균 85점 이상 : {group.GroupKey}");
+
+                foreach (var profile in group.Profiles)
+                {
+                    Console.WriteLine($"\t{profile.First}의 평균점수 : {profile.Scores.Average()}");
+                }
+            }
+
+        }
         static void Example1()
         {
             int[] numbers = { 9, 2, 6, 4, 5, 3, 7, 8, 1, 10 };
@@ -63,5 +131,19 @@ namespace LINQ_Example
                 Console.WriteLine($"{n.First} : {n.NewID}");
             }
         }
+
+        static void Example3()
+        {
+            var results = from student in students
+                          from score in student.Scores
+                          where score < 60
+                          select new { student.First, Score = score };
+
+            foreach (var result in results)
+            {
+                Console.WriteLine($"{result.First} : {result.Score}");
+            }
+        }
     }
 }
+
