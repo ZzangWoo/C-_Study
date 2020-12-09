@@ -14,7 +14,7 @@ namespace LINQ_Example
         public List<int> Scores;
     }
 
-    class Program
+    public class Program
     {
         private static List<Student> students = new List<Student>
         {
@@ -34,24 +34,33 @@ namespace LINQ_Example
 
         static void Main(string[] args)
         {
-            //List<Student> studentList = new List<Student>();
+            Example2();
+        }
 
-            //foreach (var list in students)
-            //{
-            //    if (list.ID >= 111 && list.ID < 114)
-            //    {
-            //        studentList.Add(list);
-            //    }
-            //}
+        static void Example1()
+        {
+            int[] numbers = { 9, 2, 6, 4, 5, 3, 7, 8, 1, 10 };
 
-            var studentList = from student in students
-                              where student.ID >= 111
-                              where student.ID < 114
-                              select student;
+            var result = from n in numbers
+                         where n % 2 == 0
+                         orderby n
+                         select n;
 
-            foreach (var list in studentList)
+            foreach (int n in result)
             {
-                Console.WriteLine($"{list.First}'s ID : {list.ID}");
+                Console.WriteLine($"짝수 : {n}");
+            }
+        }
+
+        static void Example2()
+        {
+            var result = from student in students
+                         where student.ID % 2 == 0
+                         select new { student.First, NewID = student.First + student.ID.ToString() };
+
+            foreach (var n in result)
+            {
+                Console.WriteLine($"{n.First} : {n.NewID}");
             }
         }
     }

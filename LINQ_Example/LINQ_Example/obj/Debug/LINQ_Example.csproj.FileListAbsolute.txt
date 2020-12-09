@@ -4,3 +4,9 @@ D:\Study\C#_Restudy\LINQ_Example\LINQ_Example\bin\Debug\LINQ_Example.pdb
 D:\Study\C#_Restudy\LINQ_Example\LINQ_Example\obj\Debug\LINQ_Example.csprojAssemblyReference.cache
 D:\Study\C#_Restudy\LINQ_Example\LINQ_Example\obj\Debug\LINQ_Example.exe
 D:\Study\C#_Restudy\LINQ_Example\LINQ_Example\obj\Debug\LINQ_Example.pdb
+D:\Study\C#_Restudy\CSharp_Study\LINQ_Example\LINQ_Example\obj\Debug\LINQ_Example.csprojAssemblyReference.cache
+D:\Study\C#_Restudy\CSharp_Study\LINQ_Example\LINQ_Example\obj\Debug\LINQ_Example.exe
+D:\Study\C#_Restudy\CSharp_Study\LINQ_Example\LINQ_Example\obj\Debug\LINQ_Example.pdb
+D:\Study\C#_Restudy\CSharp_Study\LINQ_Example\LINQ_Example\bin\Debug\LINQ_Example.exe.config
+D:\Study\C#_Restudy\CSharp_Study\LINQ_Example\LINQ_Example\bin\Debug\LINQ_Example.exe
+D:\Study\C#_Restudy\CSharp_Study\LINQ_Example\LINQ_Example\bin\Debug\LINQ_Example.pdb
