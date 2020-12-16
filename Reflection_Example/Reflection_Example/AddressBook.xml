@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PersonalInfo>
+	<person code="CM001">
+		<name>홍길동</name>
+		<sex>남자</sex>
+		<regNod>123456-1234567</regNod>
+		<tel>02-123-1234</tel>
+		<address>
+			서울
+		</address>
+	</person>
+	<person code="CM002">
+		<name>김길수</name>
+		<sex>남자</sex>
+		<regNod>654321-7654321</regNod>
+		<tel>03-321-4321</tel>
+		<address>
+			부산
+		</address>
+	</person>	
+	<person code="CF001">
+		<name>홍길자</name>
+		<sex>여자</sex>
+		<regNod>121212-2323232</regNod>
+		<tel>031-1111-2222</tel>
+		<address>
+			인천
+		</address>
+	</person>
+</PersonalInfo>
+
