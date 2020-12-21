@@ -1,0 +1,7 @@
+D:\Study\C#_Restudy\CSharp_Study\Task_Example\Task_Example\bin\Debug\Task_Example.exe.config
+D:\Study\C#_Restudy\CSharp_Study\Task_Example\Task_Example\bin\Debug\Task_Example.exe
+D:\Study\C#_Restudy\CSharp_Study\Task_Example\Task_Example\bin\Debug\Task_Example.pdb
+D:\Study\C#_Restudy\CSharp_Study\Task_Example\Task_Example\obj\Debug\Task_Example.csprojAssemblyReference.cache
+D:\Study\C#_Restudy\CSharp_Study\Task_Example\Task_Example\obj\Debug\Task_Example.csproj.CoreCompileInputs.cache
+D:\Study\C#_Restudy\CSharp_Study\Task_Example\Task_Example\obj\Debug\Task_Example.exe
+D:\Study\C#_Restudy\CSharp_Study\Task_Example\Task_Example\obj\Debug\Task_Example.pdb
