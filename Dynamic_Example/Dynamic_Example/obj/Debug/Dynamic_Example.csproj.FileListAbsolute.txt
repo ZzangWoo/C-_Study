@@ -1,0 +1,7 @@
+D:\Study\C#_Restudy\CSharp_Study\Dynamic_Example\Dynamic_Example\bin\Debug\Dynamic_Example.exe.config
+D:\Study\C#_Restudy\CSharp_Study\Dynamic_Example\Dynamic_Example\bin\Debug\Dynamic_Example.exe
+D:\Study\C#_Restudy\CSharp_Study\Dynamic_Example\Dynamic_Example\bin\Debug\Dynamic_Example.pdb
+D:\Study\C#_Restudy\CSharp_Study\Dynamic_Example\Dynamic_Example\obj\Debug\Dynamic_Example.csprojAssemblyReference.cache
+D:\Study\C#_Restudy\CSharp_Study\Dynamic_Example\Dynamic_Example\obj\Debug\Dynamic_Example.csproj.CoreCompileInputs.cache
+D:\Study\C#_Restudy\CSharp_Study\Dynamic_Example\Dynamic_Example\obj\Debug\Dynamic_Example.exe
+D:\Study\C#_Restudy\CSharp_Study\Dynamic_Example\Dynamic_Example\obj\Debug\Dynamic_Example.pdb
