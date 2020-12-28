@@ -60,7 +60,7 @@ namespace Dynamic_Example
             {
                 person.Name = name;
                 person.Age = age;
-                if (person.InfoChanged != null)
+                if (person.InfoChanged != null) 
                 {
                     person.InfoChanged(person, EventArgs.Empty);
                 }
